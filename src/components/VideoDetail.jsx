@@ -8,6 +8,7 @@ import { Link, useParams} from "react-router-dom"
 
 const VideoDetail = () => {
     const [videoDetail,setVideoDetail] = useState(null)
+    const [relatedVideos, setRelatedVideos] = useState(null); 
   const {id} = useParams();
 
 
@@ -15,6 +16,10 @@ const VideoDetail = () => {
   useEffect(() => {
     fetchFromApi(`videos?part=snippet,statistics&id=${id}`)
     .then((data) => setVideoDetail(data.items[0]))
+
+    fetchFromApi(`search?relatedToVideoId=${id}&part=snippet&type=video`)
+      .then((data) => setRelatedVideos(data.items))
+
   },[id])
 
     if (!videoDetail) return <Typography>Loading...</Typography>;
@@ -55,8 +60,13 @@ const VideoDetail = () => {
            
           </Box>
         </Box>
+        <Box px={2} py={{ md: 1, xs: 5 }} justifyContent="center" alignItems="center">
+          <Videos videos={relatedVideos} direction="column"/>  
+        </Box>
 
       </Stack>
+       
+
     </Box>
   )
 }
