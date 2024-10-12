@@ -15,7 +15,8 @@ const Navbar = () => {
     top: 0, 
     justifyContent:"space-between"}}>
      <Link to="/" style={{display:"flex", alignItems:"center"}}>
-      <img src={logo} alt="logo" height={45}/>
+      <img src="Public/Images/tv-svgrepo-com (1).svg" alt="logo" height={45}/>
+
      </Link>
      <SearchBar/>
     </Stack>
