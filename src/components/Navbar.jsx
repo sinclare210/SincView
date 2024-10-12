@@ -3,6 +3,7 @@ import { Stack  } from '@mui/material'
 import {Link} from "react-router-dom"
 import {logo} from "./utils/constants"
 import SearchBar from './SearchBar'
+import log from "/Public/Images/tv-svgrepo-com (1).svg";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
     top: 0, 
     justifyContent:"space-between"}}>
      <Link to="/" style={{display:"flex", alignItems:"center"}}>
-      <img src="Public/Images/tv-svgrepo-com (1).svg" alt="logo" height={45}/>
+      <img src={log} alt="logo" height={45}/>
 
      </Link>
      <SearchBar/>
