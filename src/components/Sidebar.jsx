@@ -9,14 +9,14 @@ const Sidebar = ({selectedCategory, setSelectedCategory}) => {
          {categories.map((category, index) => (
         <button key={index} className='category-btn'
         style={{
-            background: category.name === selectedCategory && "#FC1503", color:"white"
+            background: category.name === selectedCategory && "#113d8a", color:"white"
         }} 
         onClick={() =>{
             setSelectedCategory(category.name)
         }}
         >
           <span style={{
-            color: category.name === selectedCategory ? "white": "red", marginRight : "15px"
+            color: category.name === selectedCategory ? "white": "#113d8a", marginRight : "15px"
           }}>{category.icon}</span>
           <span style={{
             opacity: category.name === selectedCategory? "1": "0.8"

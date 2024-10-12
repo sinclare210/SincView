@@ -33,7 +33,7 @@ const Feed = () => {
           <Typography variant='h4' fontWeight="bold" mb={2} sx={{
         color: "white"
       }}>
-        <span style={{color: "#FC1503"}}>{selectedCategory} Videos</span>
+        <span style={{color: "#113d8a"}}>{selectedCategory} Videos</span>
       </Typography>
       <Videos videos={videos}/>
       </Box>

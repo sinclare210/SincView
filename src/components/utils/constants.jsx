@@ -13,7 +13,7 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const logo = 'Public/Images/tv-svgrepo-com (1).svg';
 
 export const categories = [
   { name: 'All', icon: <HomeIcon />, },
