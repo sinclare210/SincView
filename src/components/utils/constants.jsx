@@ -11,20 +11,32 @@ import GraphicEqIcon from '@mui/icons-material/GraphicEq';
 import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
+<<<<<<< HEAD
 import Favorite from '@mui/icons-material/Favorite';
+=======
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+>>>>>>> coplme
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const logo = 'Public/Images/tv-svgrepo-com (1).svg';
 
 export const categories = [
+<<<<<<< HEAD
   { name: 'New', icon: <HomeIcon />, },
   { name: 'Ocean_vibesss_', icon: <Favorite />, },
+=======
+  { name: 'All', icon: <HomeIcon />, },
+  { name: 'Damilola Mike-Bamiloye', icon: <OndemandVideoIcon />, },
+  { name: 'Elevation Worship', icon: <MusicNoteIcon /> },
+  { name: 'RCCG', icon: <GraphicEqIcon />, },
+  { name: 'Crypto', icon: <TrendingUpIcon />, },
+>>>>>>> coplme
   { name: 'Coding', icon: <CodeIcon />, },
   { name: 'ReactJS', icon: <CodeIcon />, },
   { name: 'NextJS', icon: <CodeIcon />, },
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon />, },
   { name: 'Podcast', icon: <GraphicEqIcon />, },
-  { name: 'Movie', icon: <OndemandVideoIcon />, },
+
   { name: 'Gaming', icon: <SportsEsportsIcon />, },
   { name: 'Live', icon: <LiveTvIcon />, },
   { name: 'Sport', icon: <FitnessCenterIcon />, },
@@ -32,7 +44,7 @@ export const categories = [
   { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
   { name: 'gilmor1', icon: <TheaterComedyIcon />, },
   { name: 'Gym', icon: <FitnessCenterIcon />, },
-  { name: 'Crypto', icon: <DeveloperModeIcon />, },
+
 ];
 
 export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
